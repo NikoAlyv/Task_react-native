@@ -10,8 +10,8 @@ import React, { useState } from "react";
 import Images from "./Images";
 
 const ImageScreen = () => {
-  const [url, setUrl] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [url, setUrl] = useState<string | null>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   return (
     <View style={styles.container}>
